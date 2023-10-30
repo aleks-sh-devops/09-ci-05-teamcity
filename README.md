@@ -45,9 +45,11 @@
 ![build8](/screenshots/15.png)  
 
 10. Напишите новый метод для класса Welcomer: метод должен возвращать произвольную реплику, содержащую слово `hunter`.
-![hunter](https://github.com/aleks-sh-devops/example-teamcity/blob/master/src/main/java/plaindoll/Welcomer.java)  
+![hunter1](https://github.com/aleks-sh-devops/example-teamcity/blob/master/src/main/java/plaindoll/Welcomer.java)  
 
 11. Дополните тест для нового метода на поиск слова `hunter` в новой реплике.
+![hunter2](https://github.com/aleks-sh-devops/example-teamcity/blob/master/src/test/java/plaindoll/WelcomerTest.java)  
+
 12. Сделайте push всех изменений в новую ветку репозитория.
 13. Убедитесь, что сборка самостоятельно запустилась, тесты прошли успешно.
 14. Внесите изменения из произвольной ветки `feature/add_reply` в `master` через `Merge`.
