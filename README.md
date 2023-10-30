@@ -9,11 +9,23 @@
 5. Сделайте fork [репозитория](https://github.com/aragastmatb/example-teamcity).
 6. Создайте VM (2CPU4RAM) и запустите [playbook](./infrastructure).
 
+![create_vm1](/screenshots/1.png)  
+![create_vm2](/screenshots/2.png)  
+![create_fork](/screenshots/3.png)  
+![add_agent1](/screenshots/4.png)  
+![add_agent2](/screenshots/5.png)  
+
 ## Основная часть
 
 1. Создайте новый проект в teamcity на основе fork.
+![create_new_project1](/screenshots/6.png)  
+
 2. Сделайте autodetect конфигурации.
+![autodetect1](/screenshots/7.png)  
+
 3. Сохраните необходимые шаги, запустите первую сборку master.
+![build1](/screenshots/8.png)  
+
 4. Поменяйте условия сборки: если сборка по ветке `master`, то должен происходит `mvn clean deploy`, иначе `mvn clean test`.
 5. Для deploy будет необходимо загрузить [settings.xml](./teamcity/settings.xml) в набор конфигураций maven у teamcity, предварительно записав туда креды для подключения к nexus.
 6. В pom.xml необходимо поменять ссылки на репозиторий и nexus.
